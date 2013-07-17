@@ -9,6 +9,7 @@ void loop(){
   digitalWrite(led,HIGH);
   delay(100);
   digitalWrite(led,LOW);
+  delay(100);
   char char1;
   char char2;
   char test[4];
