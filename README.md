@@ -1,7 +1,7 @@
 Arduino-Database-Writer-proto
 =============================
 
-Takes a python hex serial output and stores it in an array, to be used to write info onto a nfc card
+--Takes a python hex serial output and stores it in an array, to be used to write info onto a nfc card
 ====================================================================================================
 
 This program works in conjuction with the pydatabsemanager_test.py file. Which looks through the MySQL database 
