@@ -120,14 +120,16 @@ else{
         digitalWrite(led,HIGH);
         delay(500);
         digitalWrite(led,LOW);
-        dleay(500);
+        delay(500);
         if (Serial.available() == 32){
           for (int index = 0; index < 16; index++){
             char1 = Serial.read();
             char2 = Serial.read();
             test[2] = char1;
             test[3] = char2;
-            value = strtol(test, &pend, 0);
+            Serial.println(char1);
+            Serial.println(char2);
+            value = strtol(test, &pend, 16);
             data[index] = value;
             Serial.print((char)data[index]);
           }
@@ -150,5 +152,3 @@ else{
   while(Serial.available()) Serial.read();
 };
 };
-
-
