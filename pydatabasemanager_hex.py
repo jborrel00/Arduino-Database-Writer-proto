@@ -11,7 +11,7 @@ r=[]
 con = mdb.connect('localhost','root','foosball','foosball')
 with con:
 	cur = con.cursor();
-	cur.execute("select hex from name_hex_data where name = 'Test'")
+	cur.execute("select Id from name_hex_data where name = '[Name]'")
 	rows = cur.fetchall()
 	for row in rows:
 		print row[0]
